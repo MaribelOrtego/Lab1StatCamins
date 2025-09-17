@@ -1,0 +1,17 @@
+Package: Lab1Statcamins
+Type: Package
+Title: Lab1 Tutorial StatCamins. Versió catalana.
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Maribel", "Ortego",
+      email = "ma.isabel.ortego@upc.edu",
+      role = c("aut", "cre")
+    )
+  )
+Description: Lab1 Tutorial. StatCamins
+License: AGPL-3.0 license 
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    learnr
