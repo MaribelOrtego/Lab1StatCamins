@@ -638,9 +638,7 @@ A continuació us mostrem alguns exemples de gràfiques descriptives realitzades
 En primer lloc cridarem les llibreries necessàries. En properes sessions veurem que és preferible situar les llibreries extra que cridem en les primeres línies del codi del nostre script. En aquest cas, i de manera excepcional,  ens saltem la norma de col·locar aquestes llibreries al principi del codi. 
 
 ```{r llibreriesextra, echo=TRUE}
-library(extrafont)
 library(tidyverse)
-library(hrbrthemes)
 library(viridis)
 ```
 
@@ -662,7 +660,6 @@ data %>%
   ggplot( aes(x=name, y=value, fill=name)) +
     geom_boxplot() +
     scale_fill_viridis(discrete = TRUE, alpha=0.6, option="A") +
-    theme_ipsum() +
     theme(
       legend.position="none",
       plot.title = element_text(size=11)
@@ -681,7 +678,6 @@ data %>%
     geom_boxplot() +
     scale_fill_viridis(discrete = TRUE, alpha=0.6) +
     geom_jitter(color="black", size=0.4, alpha=0.9) +
-    theme_ipsum() +
     theme(
       legend.position="none",
       plot.title = element_text(size=11)
@@ -699,7 +695,6 @@ data %>%
   ggplot( aes(x=name, y=value, fill=name)) +
     geom_violin() +
     scale_fill_viridis(discrete = TRUE, alpha=0.6, option="A") +
-    theme_ipsum() +
     theme(
       legend.position="none",
       plot.title = element_text(size=11)
